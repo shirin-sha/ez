@@ -38,13 +38,7 @@ function Gallery1Page() {
                                     <div className="mt-gallery-bx  overflow-hide m-lr15 p-a10 bg-gray">
                                         <div className="mt-thum-bx mt-img-overlay6 mt-img-effect">
                                             <FastImage src={_item.image} alt="" />
-                                            <div className="overlay-bx">
-                                                <div className="overlay-icon">
-                                                    <a href={publicUrlFor(_item.image_preview)} className="mfp-link">
-                                                        <i className="fa fa-search mt-icon-box-xs" />
-                                                    </a>
-                                                </div>
-                                            </div>
+                                         
                                         </div>
                                     </div>
                                 </div>

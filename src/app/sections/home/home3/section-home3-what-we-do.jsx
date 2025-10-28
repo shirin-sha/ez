@@ -1,6 +1,4 @@
-import { route } from "../../../../globals/constants";
 import FastImage from "../../../../globals/elements/fastimg";
-import { NavLink } from "react-router-dom";
 
 function SectionHome3WhatWeDo() {
     return (
@@ -17,10 +15,9 @@ function SectionHome3WhatWeDo() {
                     <div className="col-lg-6 col-md-12">
                         <div className="mt-box sx-what-wedo">
                             <span className="site-text-primary display-block title-second text-uppercase font-20 font-weight-600 display-block m-b15">What we do</span>
-                            <h2 className="m-t0">Our mision is best in The Transport!</h2>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                type and scrambled it to make a type specimen book.</p>
-                            <NavLink to={route.pages.ABOUT} className="site-button">Read more</NavLink>
+                            <h2 className="m-t0">Driving Smart Logistics Across Kuwait</h2>
+                            <p>EZ Logistics specializes in advanced warehousing and third-party logistics (3PL) solutions tailored for modern businesses. From storage and fulfillment to co-packing, labeling, and distribution, we deliver complete supply chain efficiency from our Ardiya facility.</p>
+                            <p>With 20 years of operational excellence under the Zenith Group, we combine technology, safety, and precision to ensure every shipment is handled with care and delivered on time.</p>
                         </div>
                     </div>
                 </div>

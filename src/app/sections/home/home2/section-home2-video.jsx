@@ -11,9 +11,9 @@ function SectionHome2Video() {
                     <span className="ripple" />
                 </a>
                 <div className="text-white help-section">
-                    <h2 className="m-b30">Quality never goes out of style.</h2>
-                    <h4 className="m-b30"><strong>We take pride in serving our customers safely. We are hear to help you out.</strong></h4>
-                    <NavLink to={route.pages.contact.CONTACT1} className="site-button">Contact Us</NavLink>
+                    <h2 className="m-b30">Driven by Quality. Guided by Trust.</h2>
+                    <h4 className="m-b30"><strong>At EZ Logistics, quality is not an option — it's our foundation. Every shipment, every service, and every client relationship reflects our commitment to reliability and precision.</strong></h4>
+                    <NavLink to={route.pages.contact.CONTACT1} className="site-button">Contact Us →</NavLink>
                 </div>
             </div>
         </div>

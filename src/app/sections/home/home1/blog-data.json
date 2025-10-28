@@ -1,0 +1,47 @@
+{
+  "title": "News & Insights",
+  "introText": "Stay updated with the latest developments, industry trends, and company highlights from EZ Logistics — your trusted 3PL partner in Kuwait.",
+  "posts": [
+    {
+      "image": "images/blog/grid/pic5.jpg",
+      "date": "09 OCT 2025",
+      "day": "09",
+      "month": "OCT",
+      "author": "John",
+      "comments": 14,
+      "title": "Expanding Efficiency Through Smart Warehouse Systems",
+      "description": "EZ Logistics introduces advanced digital reporting tools that allow clients to track stock, space utilization, and shipments in real time — enhancing control and reducing downtime.",
+      "seoTitle": "Smart Warehouse Systems in Kuwait | EZ Logistics Automation & Digital Tracking",
+      "metaDescription": "Discover how EZ Logistics enhances warehouse efficiency through advanced digital tools that track stock, space utilization, and shipments in real time—delivering greater accuracy and control.",
+      "keywords": "warehouse management Kuwait, smart logistics solutions, real-time inventory tracking, 3PL Kuwait, warehouse automation systems"
+    },
+    {
+      "image": "images/blog/grid/pic6.jpg",
+      "date": "15 OCT 2025",
+      "day": "15",
+      "month": "OCT",
+      "author": "John",
+      "comments": 14,
+      "title": "Partnership Strengthens Zenith Group's Logistics Network",
+      "description": "As part of the Zenith Group, EZ Logistics continues to strengthen its infrastructure with upgraded racking systems and expanded facilities to better serve clients across Kuwait.",
+      "seoTitle": "Zenith Group Expands EZ Logistics Network in Kuwait | Stronger Racking & Storage Infrastructure",
+      "metaDescription": "EZ Logistics, a proud sister company of Zenith Group, continues to strengthen its logistics infrastructure with upgraded racking systems and expanded warehousing facilities across Kuwait.",
+      "keywords": "Zenith Group Kuwait, warehouse racking solutions, logistics infrastructure Kuwait, 3PL service provider, EZ Logistics news"
+    },
+    {
+      "image": "images/blog/grid/pic7.jpg",
+      "date": "20 OCT 2025",
+      "day": "20",
+      "month": "OCT",
+      "author": "John",
+      "comments": 14,
+      "title": "Sustainability in Motion: Our Eco-Driven Transport Solutions",
+      "description": "From optimized delivery routes to reduced carbon footprint operations, EZ Logistics integrates sustainable practices into every phase of its warehousing and transportation services.",
+      "seoTitle": "Sustainable Logistics Kuwait | EZ Logistics Eco-Friendly Transport & Distribution",
+      "metaDescription": "EZ Logistics integrates sustainability across its logistics operations—optimizing delivery routes, reducing emissions, and promoting eco-driven transport for a greener future in Kuwait.",
+      "keywords": "sustainable logistics Kuwait, eco transport solutions, green warehousing, carbon reduction logistics, eco-friendly 3PL Kuwait"
+    }
+  ]
+}
+
+

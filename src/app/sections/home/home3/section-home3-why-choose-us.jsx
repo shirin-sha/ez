@@ -18,16 +18,16 @@ function SectionHome3WhyChooseUs() {
                         <div className="section-content sx-why-choose">
                             <div className="mt-box">
                                 <div className="mt-info bg-white text-left p-a20 m-b30">
-                                    <h4>Fast Worldwide delivery</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet odio id lectus tristique luctus. Morbi id sodales orcit.</p>
-                                    <NavLink to={route.pages.ABOUT} className="site-button-link site-text-primary font-weight-600">Read More</NavLink>
+                                    <h4>Efficient Logistics Solutions</h4>
+                                    <p>EZ Logistics provides complete warehousing and distribution solutions designed for speed, reliability, and scalability. From inbound storage to last-mile delivery, we ensure every process runs with precision and transparency.</p>
+                                    <NavLink to={route.services.SERVICES} className="site-button-link site-text-primary font-weight-600">Learn More →</NavLink>
                                 </div>
                             </div>
                             <div className="mt-box m-b30">
                                 <div className="mt-info bg-white text-left p-a20">
-                                    <h4>Safety &amp; Compliance</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet odio id lectus tristique luctus. Morbi id sodales orcit.</p>
-                                    <NavLink to={route.pages.ABOUT} className="site-button-link site-text-primary font-weight-600">Read More</NavLink>
+                                    <h4>Innovative Facility &amp; Technology</h4>
+                                    <p>Our Ardiya-based facility is powered by modern infrastructure, automated tracking systems, and 24/7 surveillance. We combine technology with over 20 years of experience under the Zenith Group to deliver efficiency and safety at every stage.</p>
+                                    <NavLink to={route.services.SERVICES} className="site-button-link site-text-primary font-weight-600">Explore Features →</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -44,24 +44,24 @@ function SectionHome3WhyChooseUs() {
                         <div className="section-content  clearfix ">
                             <div className="p-b0">
                                 <div className="mt-box">
-                                    <h2 className="m-t0"><span className="site-text-primary"> 25 years</span> of experience in Logistics services</h2>
+                                    <h2 className="m-t0"><span className="site-text-primary"> 20+ years</span> of excellence in warehousing and logistics solutions</h2>
                                 </div>
                                 <div className="our-exp">
-                                    <span className="progressText text-black"><b>Ground Transport</b></span>
+                                    <span className="progressText text-black"><b>Warehouse &amp; Fulfillment</b></span>
                                     <div className="progress m-b30 m-t10">
-                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '85%' }} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100}>85%</div>
+                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '90%' }} aria-valuenow={90} aria-valuemin={0} aria-valuemax={100}>90%</div>
                                     </div>
-                                    <span className="progressText text-black"><b>Cargo</b></span>
+                                    <span className="progressText text-black"><b>Inventory Management</b></span>
                                     <div className="progress m-b30 m-t10">
-                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '78%' }} aria-valuenow={78} aria-valuemin={0} aria-valuemax={100}>78%</div>
+                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '80%' }} aria-valuenow={80} aria-valuemin={0} aria-valuemax={100}>80%</div>
                                     </div>
-                                    <span className="progressText text-black"><b>Logistic Services</b></span>
+                                    <span className="progressText text-black"><b>Distribution &amp; Transport</b></span>
                                     <div className="progress m-b30 m-t10">
-                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '65%' }} aria-valuenow={65} aria-valuemin={0} aria-valuemax={100}>65%</div>
+                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '75%' }} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}>75%</div>
                                     </div>
-                                    <span className="progressText text-black"><b>Warehousing</b></span>
+                                    <span className="progressText text-black"><b>Co-Packing &amp; Labeling</b></span>
                                     <div className="progress m-b30 m-t10">
-                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '40%' }} aria-valuenow={40} aria-valuemin={0} aria-valuemax={100}>40%</div>
+                                        <div className="progress-bar site-bg-primary progress-bar-striped progress-bar-animated text-black" role="progressbar" style={{ width: '70%' }} aria-valuenow={70} aria-valuemin={0} aria-valuemax={100}>70%</div>
                                     </div>
                                 </div>
                             </div>

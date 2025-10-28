@@ -1,13 +1,49 @@
 import { NavLink } from "react-router-dom";
 import { route } from "../../../../globals/constants";
 
+const foundations = [
+    {
+        title: "Operational Excellence",
+        items: [
+            "Strategic Planning",
+            "Process Accuracy",
+            "Quality Control",
+            "Continuous Improvement",
+            "Timely Execution",
+            "Reliable Systems"
+        ]
+    },
+    {
+        title: "Innovation & Technology",
+        items: [
+            "Smart Warehousing",
+            "Digital Tracking",
+            "Inventory Insights",
+            "Data Automation",
+            "Cloud Integration",
+            "Process Optimization"
+        ]
+    },
+    {
+        title: "Customer Commitment",
+        items: [
+            "24/7 Support",
+            "Transparent Communication",
+            "Client Partnership",
+            "Tailored Solutions",
+            "Service Flexibility",
+            "Long-Term Trust"
+        ]
+    }
+];
+
 function SectionHome1Plans() {
     return (
         <div className="section-full text-center sx-pricing-plan-area bg-gray p-t80 p-b50">
             <div className="container">
                 {/* TITLE START*/}
                 <div className="section-head text-center">
-                    <h2 data-title="Our Plan">Our Plans</h2>
+                    <h2 data-title="Our Plan">Our Foundation</h2>
                     <div className="mt-separator-outer">
                         <div className="mt-separator site-bg-primary" />
                     </div>
@@ -16,81 +52,23 @@ function SectionHome1Plans() {
                 <div className="section-content">
                     <div className="pricingtable-row">
                         <div className="row">
-                            <div className="col-lg-4 col-md-6 m-b30">
-                                <div className="pricingtable-wrapper pricing-table-style-5 pricing-table-shadow">
-                                    <div className="pricingtable-inner bg-gray">
-                                        <div className="pricingtable-price">
-                                            <span className="pricingtable-bx">$29</span>
-                                            <span className="pricingtable-type">Month</span>
+                            {foundations.map((foundation, index) => (
+                                <div key={index} className="col-lg-4 col-md-6 m-b30">
+                                    <div className="pricingtable-wrapper pricing-table-style-5 pricing-table-shadow">
+                                        <div className="pricingtable-inner bg-gray">
+                                            <div className="pricingtable-title">
+                                                <h3>{foundation.title}</h3>
+                                            </div>
+                                            <ul className="pricingtable-features text-black bg-gray">
+                                                {foundation.items.map((item, itemIndex) => (
+                                                    <li key={itemIndex}>{item}</li>
+                                                ))}
+                                            </ul>
+                                            <div className="overlay-main bg-white opacity-07" />
                                         </div>
-                                        <div className="pricingtable-title">
-                                            <h3>Basic</h3>
-                                        </div>
-                                        <ul className="pricingtable-features text-black bg-gray">
-                                            <li>Per Mile</li>
-                                            <li>6000 kg load</li>
-                                            <li>850 kg / pallet </li>
-                                            <li>Warehousing </li>
-                                            <li>Free Packaging </li>
-                                            <li>24/7 support </li>
-                                        </ul>
-                                        <div className="pricingtable-footer">
-                                            <NavLink to={route.pages.ABOUT} className="site-button text-uppercase">Order Now</NavLink>
-                                        </div>
-                                        <div className="overlay-main bg-white opacity-07" />
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 m-b30">
-                                <div className="pricingtable-wrapper  pricing-table-style-5 pricing-table-shadow">
-                                    <div className="pricingtable-inner bg-gray">
-                                        <div className="pricingtable-price">
-                                            <span className="pricingtable-bx">$49</span>
-                                            <span className="pricingtable-type">Month</span>
-                                        </div>
-                                        <div className="pricingtable-title">
-                                            <h3>Pro</h3>
-                                        </div>
-                                        <ul className="pricingtable-features text-black bg-gray">
-                                            <li>Per Mile</li>
-                                            <li>6000 kg load</li>
-                                            <li>850 kg / pallet </li>
-                                            <li>Warehousing </li>
-                                            <li>Free Packaging </li>
-                                            <li>24/7 support </li>
-                                        </ul>
-                                        <div className="pricingtable-footer">
-                                            <NavLink to={route.pages.ABOUT} className="site-button text-uppercase">Order Now</NavLink>
-                                        </div>
-                                        <div className="overlay-main bg-white opacity-07" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 m-b30">
-                                <div className="pricingtable-wrapper  pricing-table-style-5 pricing-table-shadow">
-                                    <div className="pricingtable-inner bg-gray">
-                                        <div className="pricingtable-price">
-                                            <span className="pricingtable-bx">$99</span>
-                                            <span className="pricingtable-type">Month</span>
-                                        </div>
-                                        <div className="pricingtable-title">
-                                            <h3>Premium</h3>
-                                        </div>
-                                        <ul className="pricingtable-features text-black bg-gray">
-                                            <li>Per Mile</li>
-                                            <li>6000 kg load</li>
-                                            <li>850 kg / pallet </li>
-                                            <li>Warehousing </li>
-                                            <li>Free Packaging </li>
-                                            <li>24/7 support </li>
-                                        </ul>
-                                        <div className="pricingtable-footer">
-                                            <NavLink to={route.pages.ABOUT} className="site-button text-uppercase">Order Now</NavLink>
-                                        </div>
-                                        <div className="overlay-main bg-white opacity-07" />
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

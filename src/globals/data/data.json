@@ -91,59 +91,115 @@
 		"explore": [
 			{
 				"icon": "flaticon-pencil",
-				"title": "Fast Worldwide delivery",
-				"desc_short": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod."
+				"title": "Smart Fulfillment & Warehousing",
+				"desc_short": "At EZ Logistics, we manage every stage of your fulfillment process — from receiving to delivery. Our advanced storage systems, optimized order picking, and real-time reporting ensure total accuracy and efficiency for your growing business."
 			},
 			{
 				"icon": "flaticon-solution",
-				"title": "Safety & Compliance",
-				"desc_short": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod."
+				"title": "Inventory & Quality Control",
+				"desc_short": "With 20 years of experience and cutting-edge warehouse management software, we maintain precise stock visibility, monitor shelf life, and ensure product quality through regular inspections and reporting."
 			},
 			{
 				"icon": "flaticon-people-1",
-				"title": "Faster Performance",
-				"desc_short": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nibh euismod."
+				"title": "Safe Handling & Compliance",
+				"desc_short": "Every item that enters our warehouse is handled with care by trained professionals under a temperature-controlled and KFD-certified facility. Our operations strictly adhere to Kuwait Fire and Safety Department regulations."
 			}
 		],
 		"services": [
 			{
 				"image": "images/our-work/pic1.jpg",
 				"image_preview": "images/our-work/pic1.jpg",
-				"title": "Cargo",
-				"desc_short": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+				"title": "Fulfillment & Warehousing",
+				"desc_short": "Comprehensive fulfillment solutions including receiving, storage, picking, packing, and delivery. We offer daily stock and utilization reports and integrate your operations with our system for full transparency."
 			},
 			{
 				"image": "images/our-work/pic2.jpg",
 				"image_preview": "images/our-work/pic2.jpg",
-				"title": "Logistic Services",
-				"desc_short": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+				"title": "Palletization & Shrink Wrapping",
+				"desc_short": "Professional wrapping and palletization to secure shipments and reduce damage. Customized processes ensure your cargo is stable, well-organized, and optimized for storage or shipping."
 			},
 			{
 				"image": "images/our-work/pic3.jpg",
 				"image_preview": "images/our-work/pic3.jpg",
-				"title": "Storage",
-				"desc_short": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+				"title": "Quality & Discrepancy Reporting",
+				"desc_short": "We provide detailed reports for every discrepancy or delay, ensuring informed decisions. Track item shelf life, warehouse flow, and identify inefficiencies through our digital reporting tools."
 			},
 			{
 				"image": "images/our-work/pic4.jpg",
 				"image_preview": "images/our-work/pic4.jpg",
-				"title": "Ground Transport",
-				"desc_short": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+				"title": "Inbound & Outbound Operations",
+				"desc_short": "From unloading and registration to sorting and dispatch — we manage both sides of your logistics chain. Our team ensures flawless coordination with your sales and order systems for seamless movement of goods."
 			},
 			{
 				"image": "images/our-work/pic5.jpg",
 				"image_preview": "images/our-work/pic5.jpg",
-				"title": "Trucking Services",
-				"desc_short": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+				"title": "Inventory Management",
+				"desc_short": "End-to-end inventory management integrated with digital tracking and automated alerts. Gain full control of your assets, monitor usage trends, and reduce stock imbalances effortlessly."
 			},
 			{
 				"image": "images/our-work/pic6.jpg",
 				"image_preview": "images/our-work/pic6.jpg",
-				"title": "Warehousing",
-				"desc_short": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+				"title": "Co-Packing & Labeling",
+				"desc_short": "We provide professional co-packing and labeling for retail and export operations. Custom-branded packaging and shipment labels help track products from warehouse to final destination."
 			}
 		]
 	},
+	"features": [
+		{
+			"image": "images/our-work/pic1.jpg",
+			"image_preview": "images/our-work/pic1.jpg",
+			"title": "Digital Inventory Tracking",
+			"desc_short": "Our advanced digital inventory tracking system ensures real-time visibility of stock movements. With automated data syncing, you can monitor product levels, expiry dates, and warehouse utilization instantly, helping reduce errors and maintain total control over your operations."
+		},
+		{
+			"image": "images/our-work/pic2.jpg",
+			"image_preview": "images/our-work/pic2.jpg",
+			"title": "Temperature-Controlled Storage",
+			"desc_short": "We provide specialized climate-controlled storage for sensitive goods. Each zone maintains optimal temperature and humidity levels to preserve product quality, making it ideal for pharmaceuticals, food, and temperature-sensitive commodities."
+		},
+		{
+			"image": "images/our-work/pic3.jpg",
+			"image_preview": "images/our-work/pic3.jpg",
+			"title": "Secure 24/7 Surveillance",
+			"desc_short": "Your goods are protected around the clock with our comprehensive security systems. Our facilities feature 24/7 monitored CCTV, motion sensors, and controlled entry, ensuring complete protection and peace of mind."
+		},
+		{
+			"image": "images/our-work/pic4.jpg",
+			"image_preview": "images/our-work/pic4.jpg",
+			"title": "Real-Time Reporting Dashboard",
+			"desc_short": "Access live data on inventory, delivery schedules, and fulfillment performance through our digital dashboard. Generate instant reports and track your logistics performance anywhere, anytime."
+		},
+		{
+			"image": "images/our-work/pic5.jpg",
+			"image_preview": "images/our-work/pic5.jpg",
+			"title": "Automated Fulfillment Process",
+			"desc_short": "From receiving to dispatch, every operation is streamlined through automation. Our fulfillment process minimizes manual handling, reduces turnaround time, and guarantees order accuracy."
+		},
+		{
+			"image": "images/our-work/pic6.jpg",
+			"image_preview": "images/our-work/pic6.jpg",
+			"title": "Dedicated Customer Support",
+			"desc_short": "Our dedicated support team ensures prompt responses to all client inquiries. Whether it's shipment updates, custom requests, or technical assistance, our professionals are always available to help."
+		},
+		{
+			"image": "images/our-work/pic1.jpg",
+			"image_preview": "images/our-work/pic1.jpg",
+			"title": "Compliance & Safety Standards",
+			"desc_short": "We strictly comply with Kuwait Fire Department (KFD) and global safety regulations. Our trained staff conducts routine audits and implements preventive measures to maintain a safe, compliant work environment."
+		},
+		{
+			"image": "images/our-work/pic2.jpg",
+			"image_preview": "images/our-work/pic2.jpg",
+			"title": "Flexible Storage Solutions",
+			"desc_short": "EZ Logistics offers customizable storage solutions for all business sizes. From bulk pallets to small parcels, our modular racking and shelving systems ensure efficient use of space and easy access."
+		},
+		{
+			"image": "images/our-work/pic3.jpg",
+			"image_preview": "images/our-work/pic3.jpg",
+			"title": "Integrated Co-Packing & Labeling",
+			"desc_short": "We provide professional packaging, labeling, and branding services. Track every batch with scannable labels and enjoy seamless integration between your inventory and production processes."
+		}
+	],
 	"clients": [
 		"images/client-logo/logo1.png",
 		"images/client-logo/logo2.png",

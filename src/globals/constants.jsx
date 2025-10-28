@@ -8,6 +8,7 @@ export const route = {
     pages: {
         ABOUT: "/about-us",
         FAQ: "/faq",
+        FEATURE: "/feature",
         team: {
             TEAM: "/team",
             DETAIL: "/team/detail"

@@ -18,16 +18,8 @@ export function setFooter(currentpath) {
 }
 
 export function setHeader(currentpath) {
-    if (
-        currentpath === route.home.HOME1 ||
-        currentpath === route.INITIAL
-    ) {
-        return <SectionHeader1 />
-    } else if (currentpath === route.home.HOME3) {
-        return <SectionHeader3 />
-    } else {
-        return <SectionHeader2 />
-    }
+    // Use Header1 for all pages
+    return <SectionHeader1 />
 }
 
 export const setBannerData = (currentpath) => {
