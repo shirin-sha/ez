@@ -8,18 +8,18 @@ export const route = {
     pages: {
         ABOUT: "/about-us",
         FAQ: "/faq",
-        FEATURE: "/feature",
+        FEATURE: "/features",
         team: {
             TEAM: "/team",
             DETAIL: "/team/detail"
         },
         contact: {
-            CONTACT1: "/contact-us1",
+            CONTACT1: "/contact",
             CONTACT2: "/contact-us2"
         },
         gallery: {
-            GALLERY1: "/gallery1",
-            GALLERY2: "/gallery2"
+            GALLERY1: "/gallery",
+            GALLERY2: "/gallery"
         },
         ERROR404: "/error404",
         features: {

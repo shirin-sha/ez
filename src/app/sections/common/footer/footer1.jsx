@@ -18,11 +18,11 @@ function SectionFooter1(props) {
                                     <div className="logo-footer clearfix p-b15">
                                         <NavLink to={route.home.HOME1}><FastImage src="images/footer-logo.png" width={171} height={49} alt="" /></NavLink>
                                     </div>
-                                    <p>EZ Logistics provides professional warehousing and 3PL solutions across Kuwait. As a proud member of Zenith Group, we combine 20 years of experience with advanced logistics technology to deliver secure and efficient services.</p>
+                                    <p>EZ Logistics provides professional warehousing and 3PL solutions across Kuwait. Years of experience with advanced logistics technology to deliver secure and efficient services.</p>
                                     <ul>
                                         <li> <i className="fa fa-phone site-text-primary" /> <b className="p-lr5 text-uppercase">Phone :</b> +965 2398 6748 </li>
                                         <li><i className="fa fa-envelope site-text-primary" /> <b className="p-lr5 text-uppercase">Email : </b>info@ezlogisticskw.com</li>
-                                        <li><i className="fa fa-location-arrow site-text-primary" /> <b className="p-lr5 text-uppercase">Location :</b> Ardiya Industrial Area, Kuwait</li>
+                                        <li><i className="fa fa-location-arrow site-text-primary" /> <b className="p-lr5 text-uppercase">Location :</b> Ardiya, Kuwait</li>
                                     </ul>
                                 </div>
                             </div>

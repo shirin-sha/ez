@@ -43,7 +43,7 @@ function SectionHome1Plans() {
             <div className="container">
                 {/* TITLE START*/}
                 <div className="section-head text-center">
-                    <h2 data-title="Our Plan">Our Foundation</h2>
+                    <h2 data-title="Our Foundation">Our Foundation</h2>
                     <div className="mt-separator-outer">
                         <div className="mt-separator site-bg-primary" />
                     </div>

@@ -66,7 +66,7 @@ function ServicesPage() {
                                         <div className="mt-box bg-white bdr-1 bdr-solid bdr-gray-light mt-service-1">
                                             <div className="mt-thum-bx mt-img-overlay3 mt-img-effect">
                                                 <FastImage src={_item.image} alt="" />
-                                                <div className="overlay-bx">
+                                                {/* <div className="overlay-bx">
                                                     <div className="overlay-icon">
                                                         <NavLink to={route.services.DETAIL}>
                                                             <i className="fa fa-external-link-square mt-icon-box-xs" />
@@ -75,7 +75,7 @@ function ServicesPage() {
                                                             <i className="fa fa-search-plus mt-icon-box-xs" />
                                                         </a>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             <div className="mt-info p-a20">
                                                 <h4 className="m-t0">{_item.title}</h4>

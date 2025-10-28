@@ -8,9 +8,7 @@ import SectionOurCultureCommitments from "../../sections/pages/section-our-cultu
 import { publicUrlFor } from "../../../globals/constants";
 import FastImage from "../../../globals/elements/fastimg";
 import CountUp from "react-countup";
-
-
-
+     
 
 function AboutUsPage() {
     return (
@@ -18,6 +16,8 @@ function AboutUsPage() {
             {/* Our Mission */}
             <SectionHome3WhatWeDo />
             
+            {/*Video Section */}
+            <SectionHome2Video />
             {/* Why Choose us */}
             <SectionHome3WhyChooseUs />
 
@@ -25,8 +25,6 @@ function AboutUsPage() {
             <SectionOurCultureCommitments />
             
 
-            {/*Video Section */}
-            <SectionHome2Video />
    {/* Shipment Section */}
    <div className="section-full p-t80 p-b50 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${publicUrlFor("images/background/bg15.jpg")})` }}>
                 <div className="container">

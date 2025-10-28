@@ -1,11 +1,16 @@
 {
     "about": {
-        "background": "about-banner.jpg",
+        "background": "page-banner.jpg",
         "title": "About",
         "crumb": "About"
     },
+    "features": {
+        "background": "page-banner.jpg",
+        "title": "Features",
+        "crumb": "Features"
+    },
     "faq": {
-        "background": "faq-banner.jpg",
+        "background": "page-banner.jpg",
         "title": "FAQ",
         "crumb": "Frequently Asked Questions"
     },
@@ -20,9 +25,9 @@
         "crumb": "Team Member Detail"
     },
     "contact1": {
-        "background": "about-banner.jpg",
-        "title": "Contact 1",
-        "crumb": "Contact 1"
+        "background": "page-banner.jpg",
+        "title": "Contact",
+        "crumb": "Contact"
     },
     "contact2": {
         "background": "about-banner.jpg",
@@ -30,9 +35,9 @@
         "crumb": "Contact 2"
     },
     "gallery1": {
-        "background": "gallery-banner.jpg",
-        "title": "Gallery Grid 1",
-        "crumb": "Gallery Grid 1"
+        "background": "page-banner.jpg",
+        "title": "Gallery",
+        "crumb": "Gallery"
     },
     "gallery2": {
         "background": "gallery-banner.jpg",
@@ -60,19 +65,19 @@
         "crumb": "Footer Dark"
     },
     "services": {
-        "background": "services.jpg",
+        "background": "page-banner.jpg",
         "title": "Services",
         "crumb": "Services"
     },
     "serviceDetail": {
-        "background": "services.jpg",
+        "background": "page-banner.jpg",
         "title": "Service Details",
         "crumb": "Service Details"
     },
     "blogList": {
-        "background": "blog-banner.jpg",
-        "title": "Blog List",
-        "crumb": "Blog List"
+        "background": "page-banner.jpg",
+        "title": "Blog",
+        "crumb": "Blog"
     },
     "blogListSidebar": {
         "background": "blog-banner.jpg",

@@ -146,55 +146,55 @@
 	},
 	"features": [
 		{
-			"image": "images/our-work/pic1.jpg",
-			"image_preview": "images/our-work/pic1.jpg",
+			"image": "images/features/pic1.jpg",
+			"image_preview": "images/features/pic1.jpg",
 			"title": "Digital Inventory Tracking",
 			"desc_short": "Our advanced digital inventory tracking system ensures real-time visibility of stock movements. With automated data syncing, you can monitor product levels, expiry dates, and warehouse utilization instantly, helping reduce errors and maintain total control over your operations."
 		},
 		{
-			"image": "images/our-work/pic2.jpg",
+			"image": "images/features/pic2.jpg",
 			"image_preview": "images/our-work/pic2.jpg",
 			"title": "Temperature-Controlled Storage",
 			"desc_short": "We provide specialized climate-controlled storage for sensitive goods. Each zone maintains optimal temperature and humidity levels to preserve product quality, making it ideal for pharmaceuticals, food, and temperature-sensitive commodities."
 		},
 		{
-			"image": "images/our-work/pic3.jpg",
+			"image": "images/features/pic3.jpg",
 			"image_preview": "images/our-work/pic3.jpg",
 			"title": "Secure 24/7 Surveillance",
 			"desc_short": "Your goods are protected around the clock with our comprehensive security systems. Our facilities feature 24/7 monitored CCTV, motion sensors, and controlled entry, ensuring complete protection and peace of mind."
 		},
 		{
-			"image": "images/our-work/pic4.jpg",
+			"image": "images/features/pic4.jpg",
 			"image_preview": "images/our-work/pic4.jpg",
 			"title": "Real-Time Reporting Dashboard",
 			"desc_short": "Access live data on inventory, delivery schedules, and fulfillment performance through our digital dashboard. Generate instant reports and track your logistics performance anywhere, anytime."
 		},
 		{
-			"image": "images/our-work/pic5.jpg",
+			"image": "images/features/pic5.jpg",	
 			"image_preview": "images/our-work/pic5.jpg",
 			"title": "Automated Fulfillment Process",
 			"desc_short": "From receiving to dispatch, every operation is streamlined through automation. Our fulfillment process minimizes manual handling, reduces turnaround time, and guarantees order accuracy."
 		},
 		{
-			"image": "images/our-work/pic6.jpg",
+			"image": "images/features/pic6.jpg",
 			"image_preview": "images/our-work/pic6.jpg",
 			"title": "Dedicated Customer Support",
 			"desc_short": "Our dedicated support team ensures prompt responses to all client inquiries. Whether it's shipment updates, custom requests, or technical assistance, our professionals are always available to help."
 		},
 		{
-			"image": "images/our-work/pic1.jpg",
+			"image": "images/features/pic7.jpg",		
 			"image_preview": "images/our-work/pic1.jpg",
 			"title": "Compliance & Safety Standards",
 			"desc_short": "We strictly comply with Kuwait Fire Department (KFD) and global safety regulations. Our trained staff conducts routine audits and implements preventive measures to maintain a safe, compliant work environment."
 		},
 		{
-			"image": "images/our-work/pic2.jpg",
+			"image": "images/features/pic8.jpg",
 			"image_preview": "images/our-work/pic2.jpg",
 			"title": "Flexible Storage Solutions",
 			"desc_short": "EZ Logistics offers customizable storage solutions for all business sizes. From bulk pallets to small parcels, our modular racking and shelving systems ensure efficient use of space and easy access."
 		},
 		{
-			"image": "images/our-work/pic3.jpg",
+			"image": "images/features/pic9.jpg",
 			"image_preview": "images/our-work/pic3.jpg",
 			"title": "Integrated Co-Packing & Labeling",
 			"desc_short": "We provide professional packaging, labeling, and branding services. Track every batch with scannable labels and enjoy seamless integration between your inventory and production processes."

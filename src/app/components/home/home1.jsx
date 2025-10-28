@@ -78,7 +78,7 @@ function Home1Page() {
                         <div className="section-content  contact-home1-right">
                             <div className="mt-box">
                                 <div className="mt-media">
-                                    <FastImage src="images/con-1.png" alt="" />
+                                    <FastImage src="images/con-1.png" alt="" style={{ maxWidth: '84%' }} />
                                 </div>
                             </div>
                         </div>

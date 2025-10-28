@@ -46,6 +46,8 @@ export const setBannerData = (currentpath) => {
             return banner.footerLight
         case route.pages.features.footer.DARK:
             return banner.footerDark
+        case route.pages.FEATURE:
+            return banner.features
         case route.services.SERVICES:
             return banner.services
         case route.services.DETAIL:

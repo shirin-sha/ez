@@ -82,12 +82,10 @@ function SectionHeader1() {
                         </button>
                         {/* ETRA Nav */}
                         <div className="extra-nav">
-                            <div className="extra-cell">
-                                <NavLink to={route.pages.contact.CONTACT1} className="site-search-btn" title="Get A Quote" style={{ fontSize: '20px' }}><i className="fa fa-calculator" /></NavLink>
-                            </div>
-                            <div className="extra-cell">
-                                <a href="#download" className="site-search-btn" title="Download Profile" style={{ fontSize: '20px' }}><i className="fa fa-download" /></a>
-                            </div>
+                           
+                        <a href='/contact' className="site-search-btn" title="Get A Quote"><i className="fa fa-calculator" style={{fontSize: '16px'}} /></a>
+                        <a href="#download" className="site-search-btn" title="Download Profile"><i className="fa fa-download" style={{fontSize: '17px'}} /></a>
+                            
                         </div>
                         {/* SITE Download placeholder (anchor only) */}
                         <div className="logo-show-in-mobile">

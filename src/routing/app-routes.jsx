@@ -41,17 +41,14 @@ function AppRoutes() {
             <Route path={route.home.HOME1} element={<Home1Page />}/>
             <Route path={route.home.HOME2} element={<Home2Page />}/>
             <Route path={route.home.HOME3} element={<Home3Page />}/>
-            <Route path={route.pages.ABOUT} element={<AboutUsPage/>}/>
+            <Route path={route.pages.ABOUT}element={<InnerPageLayout content={<AboutUsPage />} />}/>
             <Route path={route.pages.FAQ} element={<InnerPageLayout content={<FAQPage />} />}/>
             <Route path={route.pages.team.TEAM} element={<InnerPageLayout content={<TeamPage />} />}/>
             <Route path={route.pages.team.DETAIL} element={<InnerPageLayout content={<TeamDetailPage />} />}/>
             <Route path={route.pages.contact.CONTACT1} element={<InnerPageLayout content={<ContactUs1Page />} />}/>
             <Route path={route.pages.contact.CONTACT2} element={<InnerPageLayout content={<ContactUs2Page />} />}/>
-            <Route path={route.pages.gallery.GALLERY1} element={<InnerPageLayout content={<Gallery1Page />} />}/>
-            <Route path={route.pages.gallery.GALLERY2} element={<InnerPageLayout content={<Gallery2Page />} />}/>
-            <Route path={route.pages.features.footer.FIXED} element={<InnerPageLayout content={<FeaturesPage />} />}/>
-            <Route path={route.pages.features.footer.LIGHT} element={<InnerPageLayout content={<FeaturesPage />} />}/>
-            <Route path={route.pages.features.footer.DARK} element={<InnerPageLayout content={<FeaturesPage />} />}/>
+            <Route path={route.pages.gallery.GALLERY1} element={<InnerPageLayout content={<Gallery2Page />} />}/>
+
             <Route path={route.pages.FEATURE} element={<InnerPageLayout content={<FeaturePage />} />}/>
             <Route path={route.services.SERVICES} element={<InnerPageLayout content={<ServicesPage />} />}/>
             <Route path={route.services.DETAIL} element={<InnerPageLayout content={<ServiceDetailPage />} />}/>

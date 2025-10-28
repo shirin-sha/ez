@@ -38,16 +38,7 @@ function Gallery2Page() {
                                     <div className="mt-gallery-bx bdr-1 bdr-solid bdr-gray-light m-lr15 m-b30  p-a10 bg-gray">
                                         <div className="mt-thum-bx mt-img-overlay6 mt-img-effect">
                                             <FastImage src={_item.image} alt="" />
-                                            <div className="overlay-bx">
-                                                <div className="overlay-icon">
-                                                    <a href={publicUrlFor(_item.image_preview)} className="mfp-link m-b15">
-                                                        <i className="fa fa-search mt-icon-box-xs" />
-                                                    </a>
-                                                    <NavLink to={route.services.SERVICES}>
-                                                        <i className="fa fa-link mt-icon-box-xs" />
-                                                    </NavLink>
-                                                </div>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>

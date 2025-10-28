@@ -23,7 +23,7 @@ function SectionLatestProjects() {
                         <div className="section-head text-center sx-title-mid-area">
                             <div className="mt-box text-white m-b30">
                                 <h2 className="m-tb0">With <span className="site-text-primary">20 years</span> of experience, we deliver smarter logistics solutions.</h2>
-                                <p className="m-b15">As a proud member of the Zenith Group, EZ Logistics brings two decades of proven excellence in warehousing, racking systems, and logistics management. Our facility in Ardiya, Kuwait is equipped to handle everything — from co-packing and labeling to storage, fulfillment, and distribution — ensuring your goods are managed with precision and care.</p>
+                                <p className="m-b15">Our facility in Ardiya, Kuwait is equipped to handle everything — from co-packing and labeling to storage, fulfillment, and distribution — ensuring your goods are managed with precision and care.</p>
                             </div>
                         </div>
                         <div className="filter-carousal-1-outer">
