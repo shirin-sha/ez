@@ -7,6 +7,10 @@ const { MongoClient } = require('mongodb');
 const app = express();
 const PORT = process.env.BACKEND_PORT || process.env.PORT || 5000;
 
+console.log('Starting server...');
+console.log('PORT:', PORT);
+console.log('NODE_ENV:', process.env.NODE_ENV);
+
 // Middleware
 // CORS configuration - allow all origins in development, specific in production
 const corsOptions = {
@@ -24,30 +28,37 @@ let client;
 const mongoUri = process.env.MONGODB_URI;
 
 if (!mongoUri) {
-    console.error('MONGODB_URI is not defined in environment variables');
-    process.exit(1);
+    console.error('WARNING: MONGODB_URI is not defined in environment variables');
+    console.error('MongoDB-dependent endpoints will not work until MongoDB is configured');
+} else {
+    // Use database name from env or extract from URI
+    const dbName = process.env.MONGODB_DB_NAME || (() => {
+        const match = mongoUri.match(/\/\/(?:[^/]+@)?[^/]+\/([^?]+)/);
+        return match && match[1] ? match[1] : 'ezlogistics';
+    })();
+
+    MongoClient.connect(mongoUri)
+        .then(connectedClient => {
+            client = connectedClient;
+            db = client.db(dbName);
+            console.log(`Connected to MongoDB - Database: ${dbName}`);
+        })
+        .catch(error => {
+            console.error('WARNING: MongoDB connection error:', error);
+            console.error('MongoDB-dependent endpoints will not work until MongoDB is accessible');
+        });
 }
-
-// Use database name from env or extract from URI
-const dbName = process.env.MONGODB_DB_NAME || (() => {
-    const match = mongoUri.match(/\/\/(?:[^/]+@)?[^/]+\/([^?]+)/);
-    return match && match[1] ? match[1] : 'ezlogistics';
-})();
-
-MongoClient.connect(mongoUri)
-    .then(connectedClient => {
-        client = connectedClient;
-        db = client.db(dbName);
-        console.log(`Connected to MongoDB - Database: ${dbName}`);
-    })
-    .catch(error => {
-        console.error('MongoDB connection error:', error);
-        process.exit(1);
-    });
 
 // Admin login endpoint
 app.post('/api/admin/login', async (req, res) => {
     try {
+        if (!db) {
+            return res.status(503).json({ 
+                success: false, 
+                error: 'Database not available. Please check MongoDB connection.' 
+            });
+        }
+
         const { username, password } = req.body;
 
         if (!username || !password) {
@@ -96,6 +107,13 @@ app.post('/api/admin/login', async (req, res) => {
 // Contact form submission endpoint
 app.post('/api/contact', async (req, res) => {
     try {
+        if (!db) {
+            return res.status(503).json({ 
+                success: false, 
+                error: 'Database not available. Please check MongoDB connection.' 
+            });
+        }
+
         const { fullName, companyName, mobile, email, services, message } = req.body;
 
         // Validation
@@ -143,6 +161,13 @@ app.post('/api/contact', async (req, res) => {
 // Get all contact form submissions (Admin only - should add auth check in production)
 app.get('/api/contacts', async (req, res) => {
     try {
+        if (!db) {
+            return res.status(503).json({ 
+                success: false, 
+                error: 'Database not available. Please check MongoDB connection.' 
+            });
+        }
+
         const contacts = await db.collection('contacts')
             .find({})
             .sort({ createdAt: -1 }) // Newest first
@@ -169,16 +194,27 @@ app.get('/api/health', (req, res) => {
 
 // Serve static files from React app build directory
 const buildPath = path.join(__dirname, '../build');
-app.use(express.static(buildPath));
+console.log('Serving static files from:', buildPath);
 
-// Serve React app for all non-API routes
-app.get('*', (req, res) => {
-    // Don't intercept API routes
-    if (req.path.startsWith('/api')) {
-        return res.status(404).json({ error: 'Not found' });
-    }
-    res.sendFile(path.join(buildPath, 'index.html'));
-});
+// Check if build directory exists
+const fs = require('fs');
+if (fs.existsSync(buildPath)) {
+    console.log('Build directory found, serving static files');
+    app.use(express.static(buildPath));
+
+    // Serve React app for all non-API routes
+    app.get('*', (req, res) => {
+        res.sendFile(path.join(buildPath, 'index.html'));
+    });
+} else {
+    console.warn('WARNING: Build directory not found at:', buildPath);
+    app.get('*', (req, res) => {
+        if (req.path.startsWith('/api')) {
+            return res.status(404).json({ error: 'Not found' });
+        }
+        res.status(500).send('Build directory not found. Please run npm run build first.');
+    });
+}
 
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
