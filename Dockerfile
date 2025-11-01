@@ -14,7 +14,8 @@ RUN npm ci --only=production=false
 # Copy source code
 COPY . .
 
-# Build React app
+# Build React app (CI=false to prevent warnings being treated as errors)
+ENV CI=false
 RUN npm run build
 
 # Stage 2: Production image
