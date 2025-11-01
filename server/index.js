@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const { MongoClient } = require('mongodb');
 
 const app = express();
@@ -166,7 +167,20 @@ app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', mongodb: db ? 'connected' : 'disconnected' });
 });
 
-app.listen(PORT, () => {
+// Serve static files from React app build directory
+const buildPath = path.join(__dirname, '../build');
+app.use(express.static(buildPath));
+
+// Serve React app for all non-API routes
+app.get('*', (req, res) => {
+    // Don't intercept API routes
+    if (req.path.startsWith('/api')) {
+        return res.status(404).json({ error: 'Not found' });
+    }
+    res.sendFile(path.join(buildPath, 'index.html'));
+});
+
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
 

@@ -19,7 +19,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "env-cmd react-scripts start",
+    "start": "node server/index.js",
+    "dev": "env-cmd react-scripts start",
     "server": "node server/index.js",
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
