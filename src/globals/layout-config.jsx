@@ -6,10 +6,14 @@ import { route } from "./constants";
 import banner from "../globals/data/banner.json";
 
 export function showHeader(currentpath) {
-    return !(currentpath === route.pages.ERROR404)
+    return !(currentpath === route.pages.ERROR404 || currentpath === route.admin.LOGIN || currentpath === route.admin.MESSAGES)
 }
 
 export function setFooter(currentpath) {
+    // Don't show footer on admin pages
+    if (currentpath === route.admin.LOGIN || currentpath === route.admin.MESSAGES) {
+        return null;
+    }
     if (currentpath === route.pages.features.footer.LIGHT) {
         return <SectionFooter1 theme="footer-light" />
     } else {

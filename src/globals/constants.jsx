@@ -48,7 +48,12 @@ export const route = {
         WISHLIST: "/shop/wishlist",
         CHECKOUT: "/shop/checkout"
     },
-    ELEMENTS: "/elements"
+    ELEMENTS: "/elements",
+    admin: {
+        LOGIN: "/admin",
+        DASHBOARD: "/admin/dashboard",
+        MESSAGES: "/admin/messages"
+    }
 }
 
 export function publicUrlFor(path) {

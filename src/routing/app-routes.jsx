@@ -34,6 +34,11 @@ import ShopChekoutPage from "../app/components/shop/checkout";
 
 import ElementsPage from "../app/components/elements";
 
+import AdminLoginPage from "../app/components/pages/admin/admin-login";
+import AdminMessages from "../app/components/pages/admin/admin-messages";
+import AdminLayout from "../layouts/admin-layout";
+import ProtectedRoute from "../components/ProtectedRoute";
+
 function AppRoutes() {
     return (
         <Routes>
@@ -63,6 +68,20 @@ function AppRoutes() {
             <Route path={route.shop.WISHLIST} element={<InnerPageLayout content={<ShopWishlistPage />} />}/>
             <Route path={route.shop.CHECKOUT} element={<InnerPageLayout content={<ShopChekoutPage />} />}/>
             <Route path={route.ELEMENTS} element={<InnerPageLayout content={<ElementsPage />} />}/>
+            
+            {/* Admin Routes */}
+            <Route path={route.admin.LOGIN} element={<AdminLoginPage />} />
+            <Route 
+                path={route.admin.MESSAGES} 
+                element={
+                    <ProtectedRoute>
+                        <AdminLayout>
+                            <AdminMessages />
+                        </AdminLayout>
+                    </ProtectedRoute>
+                } 
+            />
+            
             <Route path="*" element={<InnerPageLayout content={<Error404 />} />}/>
         </Routes>
     )
